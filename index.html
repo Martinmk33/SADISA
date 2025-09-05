@@ -2,159 +2,190 @@
 <html lang="fr">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>SADISA - Assurance Digitale de Confiance</title>
 
   <!-- Bootstrap CSS -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
 
-  <!-- Style personnalisé -->
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet" />
+
+  <!-- CSS personnalisé -->
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
-  <!-- Header -->
-  <header class="py-3 text-white">
-    <div class="container d-flex justify-content-between align-items-center">
-      <h1 class="h3 m-0">SADISA</h1>
-      <nav>
-        <ul class="nav">
-          <li class="nav-item"><a href="#services" class="nav-link text-white">Services</a></li>
-          <li class="nav-item"><a href="#about" class="nav-link text-white">À propos</a></li>
-          <li class="nav-item"><a href="#contact" class="nav-link text-white">Contact</a></li>
-        </ul>
-      </nav>
+<!-- ======= HEADER ======= -->
+<header class="bg-primary text-white py-3">
+  <div class="container d-flex justify-content-between align-items-center">
+    <div class="d-flex align-items-center">
+      <img src="sadisa logo.jpg" alt="Logo SADISA" style="height: 50px; margin-right: 15px;">
+      <h1 class="h4 mb-0">SADISA Assurances</h1>
     </div>
-  </header>
+    <nav>
+      <ul class="nav">
+        <li class="nav-item"><a class="nav-link text-white" href="#services">Services</a></li>
+        <li class="nav-item"><a class="nav-link text-white" href="#about">À propos</a></li>
+        <li class="nav-item"><a class="nav-link text-white" href="#contact">Contact</a></li>
+        <li class="nav-item"><a class="nav-link text-white" href="inscription.html">Inscription</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
 
-  <!-- Hero -->
-  <section class="hero text-center py-5">
-    <div class="container">
-      <h2 class="display-5 mb-3">L’assurance digitale de demain, aujourd’hui</h2>
-      <p class="lead mb-4">Avec SADISA, bénéficiez d’un service d’assurance simple, rapide et digne de confiance.</p>
-      <a href="#contact" class="btn btn-primary btn-lg">Demandez un devis gratuit</a>
-    </div>
-  </section>
+<!-- ======= HERO SECTION ======= -->
+<section class="hero bg-light py-5 text-center">
+  <div class="container">
+    <h2 class="display-5 text-primary">L’assurance digitale de demain, aujourd’hui</h2>
+    <p class="lead">Avec SADISA, bénéficiez d’un service d’assurance simple, rapide et digne de confiance.</p>
+    <a href="#contact" class="btn btn-primary btn-lg">Demandez un devis gratuit</a>
+  </div>
+</section>
 
-  <!-- Services -->
-  <section id="services" class="py-5">
-    <div class="container">
-      <h2 class="text-center mb-4">Nos Services</h2>
-      <div class="row g-4">
-        <div class="col-md-3 text-center">
-          <img src="XPANDER 2_2.png" alt="Assurance Auto" class="img-fluid mb-2" />
-          <h5>Assurance Auto</h5>
-          <p>Protégez votre véhicule avec une couverture sur mesure.</p>
-        </div>
-        <div class="col-md-3 text-center">
-          <img src="OIP.webp" alt="Assurance Santé" class="img-fluid mb-2" />
-          <h5>Assurance Santé</h5>
-          <p>Une protection santé complète pour vous et vos proches.</p>
-        </div>
-        <div class="col-md-3 text-center">
-          <img src="votre-assurance-habitation.png" alt="Assurance Habitation" class="img-fluid mb-2" />
-          <h5>Assurance Habitation</h5>
-          <p>Protégez votre maison contre les imprévus et sinistres.</p>
-        </div>
-        <div class="col-md-3 text-center">
-          <img src="Les-principes-assurance-Pro-F.jpg" alt="Assurance Professionnelle" class="img-fluid mb-2" />
-          <h5>Assurance Professionnelle</h5>
-          <p>Sécurisez votre activité professionnelle en toute sérénité.</p>
-        </div>
-      </div>
-    </div>
-  </section>
+<!-- ======= SERVICES ======= -->
+<section id="services" class="services py-5 text-center">
+  <div class="container">
+    <h2 class="mb-4 text-primary">Nos Services</h2>
+    <div class="row justify-content-center row-cols-1 row-cols-sm-2 row-cols-md-4 g-4">
 
-  <!-- À propos -->
-  <section id="about" class="bg-light py-5">
-    <div class="container">
-      <h2 class="text-center mb-4">À propos de SADISA</h2>
-      <p class="text-center">SADISA signifie “aider” en kikongo. Notre mission est de vous offrir une assurance digitale accessible, sécurisée et humaine. Nous croyons en une protection moderne, enracinée dans nos valeurs locales.</p>
-    </div>
-  </section>
-
-  <!-- Contact -->
-  <section id="contact" class="py-5">
-    <div class="container">
-      <div class="row g-5">
-        <!-- Formulaire -->
-        <div class="col-md-6">
-          <h2>Contactez-nous</h2>
-          <form>
-            <div class="mb-3"><input type="text" class="form-control" placeholder="Votre nom" required></div>
-            <div class="mb-3"><input type="email" class="form-control" placeholder="Votre email" required></div>
-            <div class="mb-3"><input type="text" class="form-control" placeholder="Sujet" required></div>
-            <div class="mb-3"><textarea class="form-control" rows="4" placeholder="Votre message" required></textarea></div>
-            <button type="submit" class="btn btn-primary">Envoyer</button>
-          </form>
-        </div>
-
-        <!-- Coordonnées -->
-        <div class="col-md-6">
-          <h3>Nos coordonnées</h3>
-          <p><strong>Email :</strong> <a href="mailto:contact@sadisa.com">contact@sadisa.com</a></p>
-          <p><strong>Téléphone :</strong> <a href="tel:+243900000000">+243 900 000 000</a></p>
-          <p><strong>Adresse :</strong> Kinshasa, RDC</p>
-          <div class="d-flex gap-3 mt-3 social-links">
-            <a href="#" class="btn btn-outline-primary btn-sm">Facebook</a>
-            <a href="#" class="btn btn-outline-primary btn-sm">LinkedIn</a>
-            <a href="#" class="btn btn-outline-success btn-sm">WhatsApp</a>
+      <!-- Service 1 -->
+      <div class="col">
+        <div class="card h-100 shadow-sm">
+          <img src="XPANDER 2_2.png" class="card-img-top" alt="Assurance Auto" />
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title">Assurance Auto</h5>
+            <p class="card-text flex-grow-1">Protégez votre véhicule avec une couverture sur mesure.</p>
+            <a href="auto.html" class="btn btn-outline-primary mt-auto">En savoir plus</a>
           </div>
         </div>
       </div>
-    </div>
-  </section>
 
-  <!-- Inscription -->
-  <section id="inscription" class="bg-light py-5">
-    <div class="container">
-      <div class="row justify-content-center">
-        <div class="col-md-8 col-lg-6">
-          <div class="card shadow">
-            <div class="card-body">
-              <div class="text-center mb-4">
-                <img src="sadisa logo.jpg" alt="Logo SADISA" class="img-fluid" style="max-width: 100px;" />
-              </div>
-              <h3 class="text-center mb-4">Créer un compte</h3>
-              <form>
-                <div class="row g-3">
-                  <div class="col-md-6"><input type="text" class="form-control" placeholder="Nom" required></div>
-                  <div class="col-md-6"><input type="text" class="form-control" placeholder="Prénom" required></div>
-                  <div class="col-md-6"><input type="email" class="form-control" placeholder="Email" required></div>
-                  <div class="col-md-6"><input type="tel" class="form-control" placeholder="Téléphone" required></div>
-                  <div class="col-md-6"><input type="text" class="form-control" placeholder="Pays" required></div>
-                  <div class="col-md-6"><input type="text" class="form-control" placeholder="Ville" required></div>
-                  <div class="col-md-6"><input type="password" class="form-control" placeholder="Mot de passe" required></div>
-                  <div class="col-md-6"><input type="password" class="form-control" placeholder="Confirmer le mot de passe" required></div>
-                  <div class="col-12">
-                    <div class="form-check">
-                      <input class="form-check-input" type="checkbox" id="cgu" required />
-                      <label class="form-check-label" for="cgu">J’accepte les <a href="#">conditions générales d’utilisation</a></label>
-                    </div>
-                  </div>
-                  <div class="col-12 text-center">
-                    <button type="submit" class="btn btn-primary mt-3">S’inscrire</button>
-                  </div>
-                </div>
-              </form>
-            </div>
+      <!-- Service 2 -->
+      <div class="col">
+        <div class="card h-100 shadow-sm">
+          <img src="OIP.webp" class="card-img-top" alt="Assurance Santé" />
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title">Assurance Santé</h5>
+            <p class="card-text flex-grow-1">Une protection santé complète pour vous et vos proches.</p>
+            <a href="sante.html" class="btn btn-outline-primary mt-auto">En savoir plus</a>
           </div>
         </div>
       </div>
-    </div>
-  </section>
 
-  <!-- Footer -->
-  <footer class="py-4 text-white">
-    <div class="container d-flex flex-column flex-md-row justify-content-between align-items-center">
-      <p class="mb-2 mb-md-0">&copy; 2025 SADISA. Tous droits réservés.</p>
-      <div class="d-flex gap-3">
-        <a href="mailto:contact@sadisa.com" class="text-white text-decoration-none">Email</a>
-        <a href="tel:+243900000000" class="text-white text-decoration-none">Téléphone</a>
-        <a href="#contact" class="text-white text-decoration-none">Formulaire</a>
+      <!-- Service 3 -->
+      <div class="col">
+        <div class="card h-100 shadow-sm">
+          <img src="habitat.png" class="card-img-top" alt="Assurance Habitation" />
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title">Assurance Habitation</h5>
+            <p class="card-text flex-grow-1">Protégez votre maison contre les imprévus et sinistres.</p>
+            <a href="habitation.html" class="btn btn-outline-primary mt-auto">En savoir plus</a>
+          </div>
+        </div>
       </div>
-    </div>
-  </footer>
 
-  <!-- Bootstrap JS -->
- 
+      <!-- Service 4 -->
+      <div class="col">
+        <div class="card h-100 shadow-sm">
+          <img src="Les-principes-assurance-Pro-F.jpg" class="card-img-top" alt="Assurance Pro" />
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title">Assurance Professionnelle</h5>
+            <p class="card-text flex-grow-1">Sécurisez votre activité professionnelle en toute sérénité.</p>
+            <a href="assurance-pro.html" class="btn btn-outline-primary mt-auto">En savoir plus</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ======= À PROPOS ======= -->
+<section id="about" class="about bg-light py-5">
+  <div class="container">
+    <h2 class="text-primary mb-3 text-center">À propos de SADISA</h2>
+    <p class="lead text-center">
+      SADISA signifie “aider” en kikongo. Notre mission est de vous offrir une assurance digitale accessible, sécurisée et humaine. Nous croyons en une protection moderne, enracinée dans nos valeurs locales.
+    </p>
+  </div>
+</section>
+
+<!-- ======= CONTACT ======= -->
+<section id="contact" class="contact py-5">
+  <div class="container">
+    <h2 class="text-primary mb-4 text-center">Contactez-nous</h2>
+    <div class="row g-4">
+
+      <!-- Formulaire -->
+      <div class="col-md-6">
+        <form>
+          <div class="mb-3">
+            <label for="nom" class="form-label">Votre nom</label>
+            <input type="text" class="form-control" id="nom" placeholder="Votre nom" required />
+          </div>
+          <div class="mb-3">
+            <label for="email" class="form-label">Votre email</label>
+            <input type="email" class="form-control" id="email" placeholder="Votre email" required />
+          </div>
+          <div class="mb-3">
+            <label for="sujet" class="form-label">Sujet</label>
+            <input type="text" class="form-control" id="sujet" placeholder="Sujet" required />
+          </div>
+          <div class="mb-3">
+            <label for="message" class="form-label">Votre message</label>
+            <textarea class="form-control" id="message" rows="5" placeholder="Votre message" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">Envoyer</button>
+        </form>
+      </div>
+
+      <!-- Infos de contact -->
+      <div class="col-md-6">
+        <h3 class="text-primary">Nos coordonnées</h3>
+        <p><strong>Email :</strong> <a href="mailto:contact@sadisa.com">contact@sadisa.com</a></p>
+        <p><strong>Téléphone :</strong> <a href="tel:+243900000000">+221 900 000 000</a></p>
+        <p><strong>Adresse :</strong> Dakar , Sénégal</p>
+
+        <div class="mt-4 d-flex flex-wrap gap-2">
+          <a href="https://facebook.com" class="btn btn-outline-primary d-flex align-items-center" target="_blank">
+            <i class="bi bi-facebook me-2"></i> Facebook
+          </a>
+          <a href="https://linkedin.com" class="btn btn-outline-primary d-flex align-items-center" target="_blank">
+            <i class="bi bi-linkedin me-2"></i> LinkedIn
+          </a>
+          <a href="https://wa.me/243900000000" class="btn btn-outline-success d-flex align-items-center" target="_blank">
+            <i class="bi bi-whatsapp me-2"></i> WhatsApp
+          </a>
+          <a href="https://instagram.com" class="btn btn-outline-danger d-flex align-items-center" target="_blank">
+            <i class="bi bi-instagram me-2"></i> Instagram
+          </a>
+          <a href="https://twitter.com" class="btn btn-outline-info d-flex align-items-center" target="_blank">
+            <i class="bi bi-twitter me-2"></i> Twitter
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ======= FOOTER ======= -->
+<footer class="bg-primary text-white py-3 mt-5">
+  <div class="container d-flex justify-content-between align-items-center flex-wrap">
+    <p class="mb-0">&copy; 2025 SADISA. Tous droits réservés.</p>
+    <div class="d-flex gap-3">
+      <a href="mailto:contact@sadisa.com" class="text-white text-decoration-none">Email</a>
+      <a href="tel:+243900000000" class="text-white text-decoration-none">Téléphone</a>
+      <a href="#contact" class="text-white text-decoration-none">Formulaire</a>
+      <a href="https://instagram.com" class="text-white" target="_blank"><i class="bi bi-instagram"></i></a>
+      <a href="https://twitter.com" class="text-white" target="_blank"><i class="bi bi-twitter"></i></a>
+    </div>
+  </div>
+</footer>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

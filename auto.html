@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Assurance Auto - SADISA</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.4.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+  <link rel="stylesheet" href="auto.css" />
+</head>
+<body>
+
+<header class="bg-primary text-white py-3">
+  <div class="container d-flex justify-content-between align-items-center">
+    <h1 class="h3 mb-0">SADISA</h1>
+    <nav>
+      <ul class="nav">
+        <li class="nav-item"><a class="nav-link text-white" href="index.html#services">Services</a></li>
+        <li class="nav-item"><a class="nav-link text-white" href="index.html#about">À propos</a></li>
+        <li class="nav-item"><a class="nav-link text-white" href="index.html#contact">Contact</a></li>
+        <li class="nav-item"><a class="nav-link text-white" href="index.html#inscription">Inscription</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main class="container py-5">
+  <h2 class="text-primary mb-4">Assurance Auto - Détails & Souscription</h2>
+  
+  <section class="mb-5">
+    <h3>Pourquoi choisir notre Assurance Auto ?</h3>
+    <p>
+      Protégez votre véhicule avec une couverture sur mesure adaptée à vos besoins. Notre assurance auto vous offre :
+    </p>
+    <ul>
+      <li>Protection complète contre les accidents et vols</li>
+      <li>Assistance 24/7 partout en RDC</li>
+      <li>Des tarifs compétitifs et transparents</li>
+      <li>Gestion digitale rapide et simple</li>
+    </ul>
+  </section>
+
+  <section class="mb-5">
+    <h3>Formulaire de souscription</h3>
+    <form>
+      <div class="mb-3">
+        <label for="nomSouscription" class="form-label">Nom complet</label>
+        <input type="text" class="form-control" id="nomSouscription" placeholder="Votre nom complet" required />
+      </div>
+      <div class="mb-3">
+        <label for="emailSouscription" class="form-label">Email</label>
+        <input type="email" class="form-control" id="emailSouscription" placeholder="Votre email" required />
+      </div>
+      <div class="mb-3">
+        <label for="telSouscription" class="form-label">Téléphone</label>
+        <input type="tel" class="form-control" id="telSouscription" placeholder="Votre téléphone" required />
+      </div>
+      <div class="mb-3">
+        <label for="vehicule" class="form-label">Marque et modèle du véhicule</label>
+        <input type="text" class="form-control" id="vehicule" placeholder="Ex: Toyota Corolla" required />
+      </div>
+      <div class="mb-3">
+        <label for="couverture" class="form-label">Type de couverture souhaitée</label>
+        <select class="form-select" id="couverture" required>
+          <option value="" selected disabled>Choisissez une option</option>
+          <option value="tiers">Tiers</option>
+          <option value="tiers-etendu">Tiers Étendu</option>
+          <option value="tous-risques">Tous Risques</option>
+        </select>
+      </div>
+      <button type="submit" class="btn btn-primary">Souscrire</button>
+    </form>
+  </section>
+</main>
+
+<footer class="bg-primary text-white py-3 mt-5">
+  <div class="container d-flex justify-content-between align-items-center flex-wrap">
+    <p class="mb-0">&copy; 2025 SADISA. Tous droits réservés.</p>
+    <div class="footer-contact-links">
+      <a href="mailto:contact@sadisa.com" class="text-white me-3">Email</a>
+      <a href="tel:+243900000000" class="text-white me-3">Téléphone</a>
+      <a href="index.html#contact" class="text-white">Formulaire</a>
+    </div>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.4.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

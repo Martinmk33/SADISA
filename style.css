@@ -1,145 +1,229 @@
-/* =============================
-   Palette de Couleurs SADISA
-============================= */
+/* ===== Variables (thème bleu foncé SADISA) ===== */
 :root {
-  --sadisa-primary: #0052A3;
-  --sadisa-secondary: #00AEEF;
-  --sadisa-light: #F5F7FA;
-  --sadisa-dark: #2E2E2E;
-  --sadisa-white: #FFFFFF;
+  --primary-color: #00264d;        /* Bleu foncé */
+  --primary-dark: #001a33;
+  --secondary-color: #00bfa6;      /* Accent turquoise */
+  --text-color: #333;
+  --bg-light: #f4f7fb;
+  --white: #fff;
+  --radius: 6px;
+  --shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
 }
 
-/* =============================
-   Général
-============================= */
-body {
-  background-color: var(--sadisa-light);
-  color: var(--sadisa-dark);
-  font-family: 'Segoe UI', sans-serif;
+/* ===== Reset ===== */
+* {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
-h1, h2, h3, h4, h5 {
-  color: var(--sadisa-primary);
-  font-weight: 600;
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: var(--bg-light);
+  color: var(--text-color);
+  line-height: 1.6;
 }
 
-/* =============================
-   Header
-============================= */
-header {
-  background-color: var(--sadisa-primary);
-}
-
-header .nav-link {
-  color: var(--sadisa-white);
-}
-
-header .nav-link:hover {
-  color: var(--sadisa-secondary);
-}
-
-/* =============================
-   Hero Section
-============================= */
-.hero {
-  background-color: var(--sadisa-light);
-  color: var(--sadisa-primary);
-}
-
-/* =============================
-   Boutons
-============================= */
-.btn-primary {
-  background-color: var(--sadisa-primary);
-  border-color: var(--sadisa-primary);
-  color: var(--sadisa-white);
-}
-
-.btn-primary:hover {
-  background-color: #003d80;
-  border-color: #00366e;
-}
-
-.btn-outline-primary {
-  border-color: var(--sadisa-secondary);
-  color: var(--sadisa-secondary);
-}
-
-.btn-outline-primary:hover {
-  background-color: var(--sadisa-secondary);
-  color: white;
-}
-
-.btn-outline-success {
-  border-color: #25D366;
-  color: #25D366;
-}
-
-.btn-outline-success:hover {
-  background-color: #25D366;
-  color: white;
-}
-
-/* =============================
-   Services Section
-============================= */
-#services img {
-  max-height: 100px;
-  object-fit: contain;
-}
-
-/* =============================
-   Contact Section
-============================= */
-.social-links a {
+/* ===== Links ===== */
+a {
+  color: var(--primary-color);
   text-decoration: none;
 }
 
-.social-links a:hover {
+a:hover,
+a:focus {
+  color: var(--secondary-color);
   text-decoration: underline;
+  outline: none;
 }
 
-/* =============================
-   Formulaires
-============================= */
-form input, form textarea {
-  background-color: var(--sadisa-white);
-  border: 1px solid #ccc;
-  border-radius: 4px;
+/* ===== Header ===== */
+header {
+  background-color: var(--primary-color);
+  color: var(--white);
 }
 
-form input:focus, form textarea:focus {
-  border-color: var(--sadisa-secondary);
-  box-shadow: 0 0 5px rgba(0, 174, 239, 0.5);
+header h1 {
+  font-size: 1.6rem;
+  font-weight: 700;
+  margin: 0;
 }
 
-/* =============================
-   Formulaire d'inscription
-============================= */
+.nav .nav-link {
+  color: var(--white);
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.nav .nav-link:hover {
+  color: #ffd700;
+}
+
+/* ===== Hero Section ===== */
+.hero {
+  background-color: #e6f0ff;
+  color: var(--primary-color);
+  padding: 4rem 1rem;
+  text-align: center;
+}
+
+.hero h2 {
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+.hero .btn-primary {
+  background-color: var(--primary-color);
+  border: none;
+  padding: 0.75rem 2rem;
+  font-size: 1.1rem;
+  border-radius: var(--radius);
+  transition: background-color 0.3s ease;
+}
+
+.hero .btn-primary:hover {
+  background-color: var(--primary-dark);
+}
+
+/* ===== Section Titles ===== */
+section h2 {
+  font-weight: 700;
+  text-align: center;
+  color: var(--primary-color);
+  margin-bottom: 2rem;
+}
+
+/* ===== Cards (Services, Produits, etc.) ===== */
 .card {
   border: none;
-  background-color: var(--sadisa-white);
-  box-shadow: 0 0 20px rgba(0, 82, 163, 0.08);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  transition: transform 0.3s ease;
+  background-color: var(--white);
 }
 
-.card h3 {
-  color: var(--sadisa-primary);
+.card:hover {
+  transform: translateY(-6px);
 }
 
-/* =============================
-   Footer
-============================= */
+.card-img-top {
+  height: 180px;
+  object-fit: cover;
+  border-bottom: 3px solid var(--primary-color);
+}
+
+.card-body {
+  padding: 1rem 1.25rem;
+}
+
+.card-title {
+  font-weight: 700;
+  color: var(--primary-color);
+}
+
+.card-text {
+  font-size: 0.95rem;
+  color: #555;
+}
+
+/* ===== Buttons ===== */
+.btn-primary {
+  background-color: var(--primary-color);
+  border: none;
+  color: var(--white);
+  font-weight: 600;
+  border-radius: var(--radius);
+  transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+  background-color: var(--primary-dark);
+}
+
+.btn-outline-primary {
+  border-color: var(--primary-color);
+  color: var(--primary-color);
+  font-weight: 600;
+  border-radius: var(--radius);
+  transition: all 0.3s ease;
+}
+
+.btn-outline-primary:hover {
+  background-color: var(--primary-color);
+  color: var(--white);
+}
+
+/* ===== Forms ===== */
+form label {
+  font-weight: 600;
+  color: var(--primary-color);
+}
+
+form input,
+form textarea {
+  border-radius: var(--radius);
+  border: 1px solid #ccc;
+  padding: 0.6rem 0.75rem;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+  width: 100%;
+}
+
+form input:focus,
+form textarea:focus {
+  border-color: var(--primary-color);
+  outline: none;
+  box-shadow: 0 0 5px rgba(0, 38, 77, 0.3);
+}
+
+.form-check-input:checked {
+  background-color: var(--primary-color);
+  border-color: var(--primary-color);
+}
+
+/* ===== Contact Info Column ===== */
+.contact .col-md-6 h3,
+.contact .col-md-6 a {
+  color: var(--primary-color);
+}
+
+.contact .col-md-6 a:hover {
+  color: var(--secondary-color);
+}
+
+/* ===== Footer ===== */
 footer {
-  background-color: var(--sadisa-primary);
-  color: var(--sadisa-white);
+  background-color: var(--primary-color);
+  color: var(--white);
+  padding: 1rem 0;
 }
 
-footer a {
-  color: var(--sadisa-white);
+footer .footer-contact-links a {
+  color: var(--white);
+  margin-right: 1rem;
 }
 
-footer a:hover {
-  color: var(--sadisa-secondary);
+footer .footer-contact-links a:hover {
+  color: #ffd700;
+}
+
+/* ===== Media Queries ===== */
+@media (max-width: 768px) {
+  .hero h2 {
+    font-size: 1.5rem;
+  }
+
+  header h1 {
+    font-size: 1.2rem;
+  }
+
+  .nav {
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
 }
